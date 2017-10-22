@@ -1,7 +1,8 @@
 {
-  "name": "frontend",
+  "name": "freefoodandbeer-frontend",
   "version": "0.1.0",
   "private": true,
+  "repository": "https://github.com/promilo/freefood-beer.git",
   "dependencies": {
     "react": "^16.0.0",
     "react-dom": "^16.0.0",

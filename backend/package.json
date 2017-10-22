@@ -1,11 +1,13 @@
 {
-  "name": "freefoodandbeer",
+  "name": "freefoodandbeer-backend",
   "version": "0.0.1",
   "description": "freestuff",
   "main": "index.js",
+  "private": true,
+  "repository": "https://github.com/promilo/freefood-beer.git",
   "scripts": {
-    "start": "node -r babel-register  index.js",
-    "dev": "nodemon -- -r babel-register index.js"
+    "start": "node -r dotenv/config -r babel-register  index.js",
+    "dev": "nodemon -- -r dotenv/config -r babel-register index.js"
   },
   "author": {
     "name": "Milind Shah"
@@ -21,14 +23,18 @@
   ],
   "license": "ISC",
   "nodemonConfig": {
-    "ignore": ["node_modules/*"],
+    "ignore": [
+      "node_modules/*"
+    ],
     "delay": "1500"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
+    "dotenv": "^4.0.0",
     "express": "^4.16.2",
     "http": "^0.0.0",
+    "meetup-api": "^1.4.23",
     "morgan": "^1.9.0"
   },
   "devDependencies": {
